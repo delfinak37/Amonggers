@@ -6,7 +6,7 @@
 #include "Right.h"
 using namespace std;
 
-
+//fpspklrleotker
 
 int main()
 {
