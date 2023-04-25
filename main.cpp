@@ -5,7 +5,7 @@
 #include "Ravnobed.h"
 #include "Right.h"
 using namespace std;
-сырсрысрыррсрырыррыррырыр
+
 int main()
 {
 	
