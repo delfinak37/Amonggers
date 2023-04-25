@@ -7,6 +7,7 @@ class Right : public Triangle<T>
 	public:
 		void change()		
 		{
+			cout << 48;
 			int i = -1;
 			while(i)
 			{

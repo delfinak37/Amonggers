@@ -42,9 +42,9 @@ class Triangle
 			cout << "Triange sides: "<< a << " " << b << " " << c << "\n";
 		}
 		
-		virtual void change()
+		void change()
 		{
-			int i = -1;	int temp = 0;
+			int i = -1;	T temp = 0;
 			while(i)
 			{
 				switch(i)
@@ -95,7 +95,7 @@ class Triangle
 						break;	
 					
 					case 4:
-						int x,y,z;
+						T x,y,z;
 						cout << "\nEnter the counts: ";
 						cin >> x >> y >> z;
 						if(z+y>x and z+x>y and y+x>z)
@@ -111,10 +111,11 @@ class Triangle
 						break;
 					
 					default:
-						cout <<"Current sides: " <<  a << " " << b 
-							<< " " << c << endl << "\nEnter 1 to change first side\nEnter 2 to change second side\n"
+						cout <<"Current sides: " <<  a << "  " << b 
+							<< "  " << c << endl << "\nEnter 1 to change first side\nEnter 2 to change second side\n"
 							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\n";
 						cin >> i; cout << endl;
+						break;
 				}
 			}
 		}
