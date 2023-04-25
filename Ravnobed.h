@@ -26,8 +26,11 @@ class Ravnobed : public Triangle<T>
 		
 		float radius()
 		{
-			float p = (Triangle<T>::a+Triangle<T>::b+Triangle<T>::c)/2;	
-			return 2*sqrt(p*(p-Triangle<T>::a)*(p-Triangle<T>::b)*(p-Triangle<T>::c))/(Triangle<T>::a+Triangle<T>::b+Triangle<T>::c);
+			//float p = (Triangle<T>::a+Triangle<T>::b+Triangle<T>::c)/2;	
+			//return 2*sqrt(p*(p-Triangle<T>::a)*(p-Triangle<T>::b)*(p-Triangle<T>::c))/(Triangle<T>::a+Triangle<T>::b+Triangle<T>::c);
+			if (Triangle<T>::a == Triangle<T>::b) return Triangle<T>::c / 2 * sqrt((2 * Triangle<T>::a - Triangle<T>::c) / (2 * Triangle<T>::a + Triangle<T>::c));
+			if (Triangle<T>::a == Triangle<T>::c) return Triangle<T>::b / 2 * sqrt((2 * Triangle<T>::a - Triangle<T>::b) / (2 * Triangle<T>::a + Triangle<T>::b));
+			if (Triangle<T>::c == Triangle<T>::b) return Triangle<T>::a / 2 * sqrt((2 * Triangle<T>::b - Triangle<T>::a) / (2 * Triangle<T>::b + Triangle<T>::a));
 		}
 		
 		float Radius()
