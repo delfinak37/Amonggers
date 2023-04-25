@@ -7,7 +7,7 @@ class Right : public Triangle<T>
 	public:
 		void change()		
 		{
-			cout << 48;
+			cout << 48; // эта строка - секретный тактический приём ?)
 			int i = -1;
 			while(i)
 			{
