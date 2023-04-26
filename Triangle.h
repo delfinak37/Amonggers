@@ -139,6 +139,7 @@ class Triangle
 		
 		float Radius()
 		{
-			return 1.0*a*b*c/(4*(a+b+c));
+			float p = (a+b+c)/2;
+			return 1.0*a*b*c/(4*(sqrt(p*(p-a)*(p-b)*(p-c))));
 		}
 };

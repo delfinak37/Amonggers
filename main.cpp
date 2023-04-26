@@ -46,5 +46,16 @@ int main()
 			cin >> i;
 		}
 	}*/
+	
+	
+	/* Эта байда снизу - для проверки нужна была. Оставила, чтоб если кто захочет тоже смог проверить.
+	
+	Triangle<int> T1(3,4,5);
+	Ravnobed<int> T2;
+	Ravnostor<int> T3;
+	Right<int> T4;
+	T4.change();
+	cout<<"sqr - "<<T1.sqr()<<"\tradius - "<<T1.radius()<<"\tRadius - "<<T1.Radius()<<"\nsqr - "<<T4.sqr()<<"\tradius - "<<T4.radius()<<"\tRadius - "<<T4.Radius();
+	*/
 }
 
