@@ -26,7 +26,7 @@ class Triangle
 		
 		~Triangle()
 		{
-			cout << "\ndestruction compiled " << this << "\n\n"; 
+			cout << "\ndestruction compiled " << this << "\n"; 
 		}
 		
 		void seta(T i){a = i;}
@@ -42,7 +42,7 @@ class Triangle
 			cout << "Triange sides: "<< a << " " << b << " " << c << "\n";
 		}
 		
-		void change()
+		virtual void change()
 		{
 			int i = -1;	T temp = 0;
 			while(i)
@@ -50,7 +50,7 @@ class Triangle
 				switch(i)
 				{
 					case 1:
-						cout << "\nEnter the count: ";
+						cout << "Enter the count: ";
 						cin >> temp;
 						if(temp+b>c and temp+c>b and b+c>temp)
 						{
@@ -65,7 +65,7 @@ class Triangle
 						break;
 						
 					case 2:
-						cout << "\nEnter the count: ";
+						cout << "Enter the count: ";
 						cin >> temp;
 						if(temp+a>c and temp+c>a and a+c>temp)
 						{
@@ -80,7 +80,7 @@ class Triangle
 						break;
 						
 					case 3:
-						cout << "\nEnter the count: ";
+						cout << "Enter the count: ";
 						cin >> temp;
 						if(temp+b>a and temp+a>b and b+a>temp)
 						{
@@ -96,7 +96,7 @@ class Triangle
 					
 					case 4:
 						T x,y,z;
-						cout << "\nEnter the counts: ";
+						cout << "Enter the counts: ";
 						cin >> x >> y >> z;
 						if(z+y>x and z+x>y and y+x>z)
 						{
@@ -111,33 +111,33 @@ class Triangle
 						break;
 					
 					default:
-						cout <<"Current sides: " <<  a << "  " << b 
+						cout <<"\nCurrent sides: " <<  a << "  " << b 
 							<< "  " << c << endl << "\nEnter 1 to change first side\nEnter 2 to change second side\n"
-							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\n";
+							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\nThe choice:\t";
 						cin >> i; cout << endl;
 						break;
 				}
 			}
 		}
 		
-		int prmtr()
+		virtual int prmtr()
 		{
 			return a+b+c;
 		}
 		
-		float sqr()
+		virtual float sqr()
 		{
 			float p = (a+b+c)/2;
 			return sqrt(p*(p-a)*(p-b)*(p-c));
 		}
 		
-		float radius()
+		virtual float radius()
 		{
 			float p = (a+b+c)/2;	
 			return 2*sqrt(p*(p-a)*(p-b)*(p-c))/(a+b+c);
 		}
 		
-		float Radius()
+		virtual float Radius()
 		{
 			float p = (a+b+c)/2;
 			return 1.0*a*b*c/(4*(sqrt(p*(p-a)*(p-b)*(p-c))));
