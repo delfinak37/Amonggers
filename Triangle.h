@@ -33,9 +33,9 @@ class Triangle
 		void setb(T i){b = i;}
 		void setc(T i){c = i;}
 		
-		int geta(){return a;}
-		int getb(){return b;} 
-		int getc(){return c;}
+		T geta(){return a;}
+		T getb(){return b;} 
+		T getc(){return c;}
 		
 		void show()
 		{
@@ -120,7 +120,7 @@ class Triangle
 			}
 		}
 		
-		virtual int prmtr()
+		virtual T prmtr()
 		{
 			return a+b+c;
 		}

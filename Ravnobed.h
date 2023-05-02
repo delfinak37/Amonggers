@@ -11,7 +11,7 @@ class Ravnobed : public Triangle<T>
 			while(i)
 			{
 				cout << "Enter the sides of an isosceles triangle: ";
-				int s1,s2; cin >> s1 >> s2;
+				T s1,s2; cin >> s1 >> s2;
 				if(s1+s1>s2)
 				{
 					Triangle<T>::a = Triangle<T>::b = s1; Triangle<T>::c = s2;
