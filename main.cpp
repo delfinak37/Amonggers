@@ -23,6 +23,29 @@ int main()
 			Ravnobed<int> rb;
 			Right<int> pu;
 			
+			int k = -1;
+			switch(k) 
+			{ 
+				case 1:
+					cout << "case 1\n";
+					
+				case 2:
+					cout << "case 2\n";
+					
+				case 3:
+					cout << "case 3\n";
+					
+				case 4:
+					cout << "case 4\n";
+				default:
+					{
+					cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n";
+					cin >> k;
+					}
+			}
+			
+			
+			/*
 			cout << "\n===========================\nshow\n===========================\n\n";
 			tr.show(); rs.show(); rb.show(); pu.show();
 			
@@ -45,6 +68,7 @@ int main()
 			cout << round(tr.Radius()*100)/100 << "\t" << round(rs.Radius()*100)/100 << "\t" << round(rb.Radius()*100)/100 << "\t" << round(pu.Radius()*100)/100 << "\n";
 			
 			cout << "\n\n\n\n";
+			*/
 			
 			i = 0;
 
