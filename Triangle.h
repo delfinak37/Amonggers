@@ -8,7 +8,9 @@ class Triangle
 		
 	public:
 		Triangle()
-			{a = b = c = 2;}	
+			{
+				a = b = c = 0;
+			}	
 		
 		Triangle (T a, T b, T c)
 		{
@@ -125,21 +127,22 @@ class Triangle
 			return a+b+c;
 		}
 		
-		virtual float sqr()
+		virtual double sqr()
 		{
 			float p = (a+b+c)/2;
 			return sqrt(p*(p-a)*(p-b)*(p-c));
 		}
 		
-		virtual float radius()
+		virtual double radius()
 		{
 			float p = (a+b+c)/2;	
 			return 2*sqrt(p*(p-a)*(p-b)*(p-c))/(a+b+c);
 		}
 		
-		virtual float Radius()
+		virtual double Radius()
 		{
 			float p = (a+b+c)/2;
 			return 1.0*a*b*c/(4*(sqrt(p*(p-a)*(p-b)*(p-c))));
+			cout << a << " " << b << " " << c;
 		}
 };

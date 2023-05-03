@@ -10,6 +10,8 @@ class Ravnobed : public Triangle<T>
 			int i = -1;
 			while(i)
 			{
+				cout <<"\nCurrent sides: " <<  Triangle<T>::a << "  " << Triangle<T>::b 
+							<< "  " << Triangle<T>::c << endl;
 				cout << "Enter the sides of an isosceles triangle: ";
 				T s1,s2; cin >> s1 >> s2;
 				if(s1+s1>s2)
@@ -24,20 +26,20 @@ class Ravnobed : public Triangle<T>
 			}
 		}
 		
-		float radius()
+		double radius()
 		{
 			float p = (Triangle<T>::a+Triangle<T>::b+Triangle<T>::c)/2;	
 			return sqrt(((p - Triangle<T>::a) * (p - Triangle<T>::b) * (p - Triangle<T>::c)) / p);
 		}
 		
-		float Radius()
+		double Radius()
 		{
 			if (Triangle<T>::a == Triangle<T>::b) return pow(Triangle<T>::a,2) / sqrt(4 * pow(Triangle<T>::a,2) - pow(Triangle<T>::c,2));
 			if (Triangle<T>::a == Triangle<T>::c) return pow(Triangle<T>::a,2) / sqrt(4 * pow(Triangle<T>::a,2) - pow(Triangle<T>::b,2));
 			if (Triangle<T>::c == Triangle<T>::b) return pow(Triangle<T>::b,2) / sqrt(4 * pow(Triangle<T>::b,2) - pow(Triangle<T>::a,2));
 		}
 		
-		float sqr()
+		double sqr()
 		{
 			if (Triangle<T>::a == Triangle<T>::b) return Triangle<T>::c * sqrt(4 * pow(Triangle<T>::a,2) - pow(Triangle<T>::c,2)) / 4;
 			if (Triangle<T>::a == Triangle<T>::c) return Triangle<T>::b * sqrt(4 * pow(Triangle<T>::a,2) - pow(Triangle<T>::b,2)) / 4;

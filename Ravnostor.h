@@ -6,22 +6,24 @@ class Ravnostor : public Triangle<T>
 	public:		
 		void change()		
 		{
+			cout <<"\nCurrent sides: " <<  Triangle<T>::a << "  " << Triangle<T>::b 
+							<< "  " << Triangle<T>::c << endl;
 			cout << "Enter the side of an equilateral triangle: ";
 			T i;	cin >> i;
 			Triangle<T>::a = Triangle<T>::b = Triangle<T>::c = i;
 		}
 		
-		float radius()
+		double radius()
 		{
 			return Triangle<T>::a / 2 / sqrt(3);
 		}
 		
-		float Radius()
+		double Radius()
 		{
 			return Triangle<T>::a / sqrt(3);
 		}
 		
-		float sqr()
+		double sqr()
 		{
 			return Triangle<T>::a * Triangle<T>::a * sqrt(3) / 4;
 		}
