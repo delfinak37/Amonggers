@@ -129,19 +129,19 @@ class Triangle
 		
 		virtual double sqr()
 		{
-			float p = (a+b+c)/2;
+			float p = 1.0*(a+b+c)/2;
 			return sqrt(p*(p-a)*(p-b)*(p-c));
 		}
 		
 		virtual double radius()
 		{
-			float p = (a+b+c)/2;	
+			float p = 1.0*(a+b+c)/2;	
 			return 2*sqrt(p*(p-a)*(p-b)*(p-c))/(a+b+c);
 		}
 		
 		virtual double Radius()
 		{
-			float p = (a+b+c)/2;
+			float p = 1.0*(a+b+c)/2;
 			return 1.0*a*b*c/(4*(sqrt(p*(p-a)*(p-b)*(p-c))));
 			cout << a << " " << b << " " << c;
 		}
