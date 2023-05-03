@@ -26,7 +26,7 @@ class Triangle
 		
 		~Triangle()
 		{
-			cout << "\ndestruction compiled " << this << "\n"; 
+			//cout << "\ndestruction compiled " << this << "\n"; 
 		}
 		
 		void seta(T i){a = i;}
@@ -113,7 +113,7 @@ class Triangle
 					default:
 						cout <<"\nCurrent sides: " <<  a << "  " << b 
 							<< "  " << c << endl << "\nEnter 1 to change first side\nEnter 2 to change second side\n"
-							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\nThe choice:\t";
+							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\nThe choice: ";
 						cin >> i; cout << endl;
 						break;
 				}

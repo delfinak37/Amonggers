@@ -15,7 +15,7 @@ int main()
 		{
 			case 1:
 			{
-				cout << "Chosen: int\n\n";
+				cout << "\nChosen: int\n";
 				Triangle<int> tr;
 				Ravnostor<int> rs;
 				Ravnobed<int> rb;
@@ -210,7 +210,7 @@ int main()
 		
 		default:
 		{
-			cout << "\nChoose type of numbers:\n 1 - int\n 2 - float\n 3 - double\n 0 - to exit\n";
+			cout << "Choose type of numbers:\n1 - int\n2 - float\n3 - double\n0 - to end\n";
 			cin >> i;
 			break;
 		}

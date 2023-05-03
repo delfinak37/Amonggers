@@ -28,8 +28,6 @@ class Right : public Triangle<T>
 		
 		float radius()
 		{
-			//float p = (Triangle<T>::a+Triangle<T>::b+Triangle<T>::c)/2;	
-			//return 2*sqrt(p*(p-Triangle<T>::a)*(p-Triangle<T>::b)*(p-Triangle<T>::c))/(Triangle<T>::a+Triangle<T>::b+Triangle<T>::c);
 			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return (Triangle<T>::b + Triangle<T>::c - Triangle<T>::a)/2;
 			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return (Triangle<T>::a + Triangle<T>::c - Triangle<T>::b)/2;
 			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return (Triangle<T>::b + Triangle<T>::a - Triangle<T>::c)/2;
@@ -37,7 +35,6 @@ class Right : public Triangle<T>
 		
 		float Radius()
 		{
-			//return 1.0*Triangle<T>::a*Triangle<T>::b*Triangle<T>::c/(4*(Triangle<T>::a+Triangle<T>::b+Triangle<T>::c));
 				if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return 1.0 * Triangle<T>::a/2;
 				if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return 1.0 * Triangle<T>::b/2;
 				if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return 1.0 * Triangle<T>::c/2;
@@ -45,8 +42,6 @@ class Right : public Triangle<T>
 		
 		float sqr()
 		{
-			//float p = 3*Triangle<T>::a/2;
-			//return sqrt(p*(p-Triangle<T>::a)*(p-Triangle<T>::b)*(p-Triangle<T>::c));
 			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return Triangle<T>::b * Triangle<T>::c / 2;
 			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return Triangle<T>::a * Triangle<T>::c / 2;
 			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return Triangle<T>::b * Triangle<T>::a / 2;
