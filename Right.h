@@ -30,9 +30,9 @@ class Right : public Triangle<T>
 		
 		double radius()
 		{
-			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return (Triangle<T>::b + Triangle<T>::c - Triangle<T>::a)/2;
-			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return (Triangle<T>::a + Triangle<T>::c - Triangle<T>::b)/2;
-			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return (Triangle<T>::b + Triangle<T>::a - Triangle<T>::c)/2;
+			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return 1.0*(Triangle<T>::b + Triangle<T>::c - Triangle<T>::a)/2;
+			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return 1.0*(Triangle<T>::a + Triangle<T>::c - Triangle<T>::b)/2;
+			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return 1.0*(Triangle<T>::b + Triangle<T>::a - Triangle<T>::c)/2;
 		}
 		
 		double Radius()
@@ -44,9 +44,9 @@ class Right : public Triangle<T>
 		
 		double sqr()
 		{
-			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return Triangle<T>::b * Triangle<T>::c / 2;
-			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return Triangle<T>::a * Triangle<T>::c / 2;
-			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return Triangle<T>::b * Triangle<T>::a / 2;
+			if ((Triangle<T>::a > Triangle<T>::b) and (Triangle<T>::a > Triangle<T>::c)) return 1.0* Triangle<T>::b * Triangle<T>::c / 2;
+			if ((Triangle<T>::b > Triangle<T>::a) and (Triangle<T>::b > Triangle<T>::c)) return 1.0*Triangle<T>::a * Triangle<T>::c / 2;
+			if ((Triangle<T>::c > Triangle<T>::b) and (Triangle<T>::c > Triangle<T>::a)) return 1.0*Triangle<T>::b * Triangle<T>::a / 2;
 		}
 };
 

@@ -15,7 +15,7 @@ class Ravnostor : public Triangle<T>
 		
 		double radius()
 		{
-			return Triangle<T>::a / 2 / sqrt(3);
+			return 1.0*Triangle<T>::a / 2 / sqrt(3);
 		}
 		
 		double Radius()

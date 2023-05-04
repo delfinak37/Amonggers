@@ -37,6 +37,8 @@ int main()
 						case 2:
 						{
 							rs.change();
+							cout << "\n";
+							rs.show();
 							cout << "\nprmtr\t|sqr\t|radius\t|Radius\t|\n================================\n" << rs.prmtr() << "\t|" << round(rs.sqr()*100)/100 <<
 							"\t|" << round(rs.radius()*100)/100 << "\t|" << round(rs.Radius()*100)/100 << "\t|\n\n";
 							k = -1;
@@ -46,6 +48,8 @@ int main()
 						case 3:
 						{
 							rb.change();
+							cout << "\n";
+							rb.show();
 							cout << "\nprmtr\t|sqr\t|radius\t|Radius\t|\n================================\n" << rb.prmtr() << "\t|" << round(rb.sqr()*100)/100 <<
 							"\t|" << round(rb.radius()*100)/100 << "\t|" << round(rb.Radius()*100)/100 << "\t|\n\n";
 							k = -1;
@@ -55,6 +59,8 @@ int main()
 						case 4:
 						{
 							pu.change();
+							cout << "\n";
+							pu.show();
 							cout << "\nprmtr\t|sqr\t|radius\t|Radius\t|\n================================\n" << pu.prmtr() << "\t|" << round(pu.sqr()*100)/100 <<
 							"\t|" << round(pu.radius()*100)/100 << "\t|" << round(pu.Radius()*100)/100 << "\t|\n\n";
 							k = -1;
