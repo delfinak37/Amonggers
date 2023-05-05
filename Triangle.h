@@ -5,7 +5,6 @@ class Triangle
 {
 	protected:
 		T a,b,c;
-		
 	public:
 		Triangle()
 			{
