@@ -9,7 +9,7 @@ class Triangle
 	public:
 		Triangle()
 			{
-				a = b = c = 0;
+				a = b = c = 2;
 			}	
 		
 		Triangle (T a, T b, T c)
@@ -54,7 +54,7 @@ class Triangle
 					case 1:
 						cout << "Enter the count: ";
 						cin >> temp;
-						if(temp+b>c and temp+c>b and b+c>temp)
+						if(temp+b>c and temp+c>b and b+c>temp and temp > 0)
 						{
 							a = temp;
 							i = -1;
@@ -69,7 +69,7 @@ class Triangle
 					case 2:
 						cout << "Enter the count: ";
 						cin >> temp;
-						if(temp+a>c and temp+c>a and a+c>temp)
+						if(temp+a>c and temp+c>a and a+c>temp and temp > 0)
 						{
 							b = temp;
 							i = -1;
@@ -84,7 +84,7 @@ class Triangle
 					case 3:
 						cout << "Enter the count: ";
 						cin >> temp;
-						if(temp+b>a and temp+a>b and b+a>temp)
+						if(temp+b>a and temp+a>b and b+a>temp and temp > 0)
 						{
 							c = temp;
 							i = -1;
@@ -98,9 +98,9 @@ class Triangle
 					
 					case 4:
 						T x,y,z;
-						cout << "Enter the counts: ";
+						cout << "Enter the counts three: ";
 						cin >> x >> y >> z;
-						if(z+y>x and z+x>y and y+x>z)
+						if(z+y>x and z+x>y and y+x>z and x>0 and y >0 and z>0)
 						{
 							a=x; b=y; c=z;
 							i = -1;

@@ -161,7 +161,7 @@ int main()
 				int k = -1;
 				while(k)
 				{
-					switch(k) 
+					switch(k)
 					{ 
 						case 1:
 						{
