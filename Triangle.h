@@ -115,8 +115,14 @@ class Triangle
 					default:
 						cout <<"\nCurrent sides: " <<  a << "  " << b 
 							<< "  " << c << endl << "\nEnter 1 to change first side\nEnter 2 to change second side\n"
-							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to exit\nThe choice: ";
-						cin >> i; cout << endl;
+							<< "Enter 3 to change third side\nEnter 4 to change all sides\nEnter 0 to view triangle data and return to choice\nThe choice: ";
+						cin >> i;
+						if(i < 0 or i > 4)
+							{
+								cout << "\nDenied! Enter num again\n";
+								cin >> i;
+							}
+						cout << endl;
 						break;
 				}
 			}

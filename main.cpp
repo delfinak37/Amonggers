@@ -70,11 +70,12 @@ int main()
 						default:
 						{
 							
-							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - to exit\n";
+							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - Back to type selection\n";
 							cin >> k; cout << "\n";
-							if(k == 0)
-							{	
-								i = 0;
+							if(k < 0 or k > 4)
+							{
+								cout << "\nDenied! Enter num again\n";
+								cin >> k;
 							}
 							break;
 						}
@@ -86,7 +87,7 @@ int main()
 			
 			case 2:
 			{
-				cout << "Chosen: float\n\n";
+				cout << "Chosen: float\n";
 				Triangle<float> tr;
 				Ravnostor<float> rs;
 				Ravnobed<float> rb;
@@ -135,11 +136,12 @@ int main()
 						default:
 						{
 							
-							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - to exit\n";
+							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - Back to type selection\n";
 							cin >> k; cout << "\n";
-							if(k == 0)
-							{	
-								i = 0;
+							if(k < 0 or k > 4)
+							{
+								cout << "\nDenied! Enter num again\n";
+								cin >> k;
 							}
 							break;
 						}
@@ -151,7 +153,7 @@ int main()
 			
 			case 3:
 			{
-				cout << "Chosen: double\n\n";
+				cout << "Chosen: double\n";
 				Triangle<double> tr;
 				Ravnostor<double> rs;
 				Ravnobed<double> rb;
@@ -200,11 +202,12 @@ int main()
 						default:
 						{
 							
-							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - to exit\n";
+							cout << "Choose your triangle:\n1 - Random\n2 - Ravnostor\n3 - Ravnobed\n4 - Right\n0 - Back to type selection\n";
 							cin >> k; cout << "\n";
-							if(k == 0)
-							{	
-								i = 0;
+							if(k < 0 or k > 4)
+							{
+								cout << "\nDenied! Enter num again\n";
+								cin >> k;
 							}
 							break;
 						}
@@ -218,6 +221,11 @@ int main()
 		{
 			cout << "Choose type of numbers:\n1 - int\n2 - float\n3 - double\n0 - to end\n";
 			cin >> i;
+			if(i < 0 or i > 3)
+			{
+				cout << "\nDenied! Enter num again\n";
+				cin >> i;
+			}
 			break;
 		}
 	}
