@@ -14,9 +14,9 @@ class Right : public Triangle<T>
 							<< "  " << Triangle<T>::c << endl;
 				cout << "Enter the sides of an right triangle: ";
 				T s1,s2,s3; cin >> s1 >> s2 >> s3;
-				if(pow(s1,2)+pow(s2,2)==pow(s3,2) or
+				if((pow(s1,2)+pow(s2,2)==pow(s3,2) or
 					pow(s2,2)+pow(s3,2)==pow(s1,2) or
-						pow(s3,2)+pow(s1,2)==pow(s2,2))
+						pow(s3,2)+pow(s1,2)==pow(s2,2)) and (s1 > 0) and (s2 > 0) and (s3 > 0))
 						{
 							Triangle<T>::a = s1; Triangle<T>::b = s2; Triangle<T>::c = s3;
 							i = 0;
